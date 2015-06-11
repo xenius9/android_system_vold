@@ -176,6 +176,7 @@ VolumeManager::VolumeManager() {
     mUmsSharingCount = 0;
     mSavedDirtyRatio = -1;
     mVolManagerDisabled = 0;
+    
     // set dirty ratio to ro.vold.umsdirtyratio (default 0) when UMS is active
     char dirtyratio[PROPERTY_VALUE_MAX];
     property_get("ro.vold.umsdirtyratio", dirtyratio, "0");
